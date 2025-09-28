@@ -1,0 +1,191 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables for easy theme changes */
+:root {
+  --primary-color: #3f51b5;
+  --secondary-color: #e8eaf6;
+  --text-color: #333;
+  --card-bg-color: #ffffff;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Add smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Page Layout */
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-color);
+  line-height: 1.6;
+  padding: 20px;
+  
+  /* Animated background styles */
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 16px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 8px 20px var(--shadow-color);
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f9f7f7;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+header p {
+  font-size: 1.1rem;
+  color: #777;
+}
+
+/* style.css */
+
+.profile-pic {
+  width: 150px; /* Set a fixed width */
+  height: 150px; /* Set a fixed height */
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  display: block; /* Makes it a block element to apply margin auto */
+  margin: 20px auto; /* Centers the image horizontally and adds vertical space */
+  border: 4px solid #3498db; /* Adds a blue border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+  transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.profile-pic:hover {
+  transform: scale(1.05); /* Slightly enlarges the image on hover */
+}
+
+/* Navigation Menu */
+nav {
+  margin-bottom: 30px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 10px;
+  background-color: var(--secondary-color);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--primary-color);
+  padding: 10px 15px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  border-radius: 8px;
+}
+
+nav ul li a:hover {
+  background-color: #cfd0d4;
+}
+
+/* Sections */
+main section {
+  background-color: var(--secondary-color);
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+  color: var(--primary-color);
+  margin-bottom: 15px;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+ul {
+  margin-left: 25px;
+  list-style-type: none;
+}
+
+ul li {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 25px;
+}
+
+/* Custom bullet points */
+ul li::before {
+  content: '➡️';
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+}
+
+strong {
+  color: #086363;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-item {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 400;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 1px solid #e0e0e0;
+  font-size: 0.9rem;
+  color: #999;
+}
