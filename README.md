@@ -54,7 +54,13 @@ This project was created by **Group 2** as part of a collaborative coursework as
 - Preveer Raj  
 - Taba  
 
-Each member contributed a personal profile page along with styles and assets.  
+Each member contributed a personal profile page along with styles and assets.
+Contain:
+ 
+ - Personal bio
+ - Learning goals and achievements
+ - Skills acquired or being developed
+ - A reflection on the learning journey 
 
 ## Future Improvements
 - Enhance responsiveness for mobile and tablet devices.  
