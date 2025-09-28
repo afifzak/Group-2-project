@@ -2,3 +2,9 @@
 
 ## table of content
 - home
+- resouces
+- contact
+- preveer
+- tabasree
+- jaswin
+- afif
